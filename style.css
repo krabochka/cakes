@@ -15,7 +15,7 @@ nav {
     margin-right:30px ;
     padding-right: 30px; 
     color: white;
-    
+    text-shadow: 1px 3px 5px rgb(216, 191, 191), 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(3, 3, 10);
    
 }
 
@@ -26,7 +26,7 @@ header {
 }
 body {
     font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-    background: url(background.jpg) scroll no-repeat;
+    background: url(background.jpg) scroll repeat;
     background-size: 100%;
     
 }
@@ -169,7 +169,7 @@ main {
     
 }
 footer {
-    
+    margin-top: 20px;
     height: 100px;
     display: flex;
     justify-content: right;
@@ -255,22 +255,65 @@ input[type=radio] {
 }
 .goods{
     position:relative;
-    background-color: blueviolet;
-  
+    background-color: peachpuff;
+    text-align: center;
     border-style: solid ;
     border-radius: 20px;
     padding: 20px;
-    height: 400px;
+    height: 500px;
     margin-top: 20px;
+    border-color: tomato;
 }
-.goods button {
+.goods button, .zakaz {
     position:absolute;
     bottom: 0;
     transform: translateX(-20px);
-    border-radius: 20px;
+    border-radius: 18px;
+    
 }
  .label { 
-     width: 400px;
+     width: 700px;
      margin: 30px;
+     background-color: thistle;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 20px;
  }
-    
+    .cakes-jpg {
+        border-radius: 10px;
+        border: solid white 3px;
+     text-align: center;
+     width: auto;
+     height: 200px;
+    }
+.sec1 {
+font-size: 30px;
+text-align: center;
+margin: 10px;
+padding: 15px;
+background-color: white;
+border-radius: 10px;
+}
+
+/* недо анимация */
+.flex1:hover , .icfooter:hover  {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border-color: green;
+}
+nav p:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border-color: peachpuff;
+}
+button:hover {
+    background-color:tomato;
+}
+.goods:hover {
+    -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border-color: green;
+}
